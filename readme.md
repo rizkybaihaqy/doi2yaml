@@ -6,13 +6,13 @@ Converts BibTeX data fetched from a DOI to YAML format.
 
 ### The Api
 
-1. Install using nimble
+1. Install using nimble.
 
 ```bash
-$ https://github.com/rizkybaihaqy/doi2yaml
+$ nimble install https://github.com/rizkybaihaqy/doi2yaml
 ```
 
-2. Add to the code
+2. Add to the code.
 
 ```nim
 import doi2yaml
@@ -25,13 +25,13 @@ echo doi2yaml(doi)
 
 To build and the app, you need to have Nim version 1.4.8 or later (at least that what i use in developemnt) installed on your system.
 
-1. Clone the GitHub repository:
+1. Clone the GitHub repository.
 
 ```bash
 $ git clone https://github.com/rizkybaihaqy/doi2yaml.git
 ```
 
-2. Navigate to the project directory
+2. Navigate to the project directory.
 
 ```
 $ cd doi2yaml
@@ -43,7 +43,7 @@ $ cd doi2yaml
 $ nim build
 ```
 
-4. To use the app, run the binary
+4. To use the app, run the binary.
 
 ```bash
 $ ./doi2yaml
@@ -56,7 +56,7 @@ This app is released under the MIT License.
 
 ## Acknowledgments
 
-This app inspired by [this gist](https://gist.github.com/nvictus/1f71d7e861ee3396f0982532740aff46)
+This app inspired by [this gist](https://gist.github.com/nvictus/1f71d7e861ee3396f0982532740aff46).
 
 ## Contributing
 
