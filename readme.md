@@ -40,13 +40,13 @@ $ cd doi2yaml
 3. Build the app. This will create an executable file named doi-to-yaml in the project directory.
 
 ```
-$ nim c -d:release -d:ssl src/doi2yaml.nim
+$ nim build
 ```
 
 4. To use the app, run the binary
 
 ```bash
-$ doi2yaml
+$ ./doi2yaml
 ```
 
 The app will ask then fetch the BibTeX data for the specified DOI from the web, convert it to YAML format, and print the YAML data to the console.
