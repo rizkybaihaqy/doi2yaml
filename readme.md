@@ -1,28 +1,29 @@
 # DOI to YAML Converter
 
-This is a command-line app that converts BibTeX data fetched from a DOI to YAML format.
+Converts BibTeX data fetched from a DOI to YAML format.
 
 ## Usage
 
-To use the app, run the binary:
+### The Api
+
+1. Install using nimble
 
 ```bash
-$ doi2yaml
+$ https://github.com/rizkybaihaqy/doi2yaml
 ```
 
-The app will fetch the BibTeX data for the specified DOI from the web, convert it to YAML format, and print the YAML data to the console.
+2. Add to the code
 
-## Build
+```nim
+import doi2yaml
 
-### Requirements
+const doi = 'https://doi.org/10.0000/abcd-0000'
+echo doi2yaml(doi)
+```
 
-To build and run the app, you need to have the following software installed on your system:
+### The Cli
 
-- Nim version 1.4.8 or later
-
-### Step
-
-To build the app, follow these steps:
+To build and the app, you need to have Nim version 1.4.8 or later (at least that what i use in developemnt) installed on your system.
 
 1. Clone the GitHub repository:
 
@@ -30,19 +31,25 @@ To build the app, follow these steps:
 $ git clone https://github.com/rizkybaihaqy/doi2yaml.git
 ```
 
-2. Navigate to the project directory:
+2. Navigate to the project directory
 
-```bash
+```
 $ cd doi2yaml
 ```
 
-3. Build the app:
+3. Build the app. This will create an executable file named doi-to-yaml in the project directory.
 
-```bash
+```
 $ nim c -d:release -d:ssl src/doi2yaml.nim
 ```
 
-This will create an executable file named doi-to-yaml in the project directory.
+4. To use the app, run the binary
+
+```bash
+$ doi2yaml
+```
+
+The app will ask then fetch the BibTeX data for the specified DOI from the web, convert it to YAML format, and print the YAML data to the console.
 
 ## License
 This app is released under the MIT License.
